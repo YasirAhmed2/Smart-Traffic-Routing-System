@@ -1,0 +1,78 @@
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary: #6b7280;
+    --success: #16a34a;
+    --warning: #d97706;
+    --danger: #ef4444;
+    --info: #06b6d4;
+    --light: #f9fafb;
+    --dark: #111827;
+    --text: #000000;
+    --card-bg: #ffffff;
+    --border: #e5e7eb;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--light);
+}
+
+.main {
+    padding: 1rem 2rem;
+}
+
+.sidebar .sidebar-content {
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border);
+}
+
+.stButton>button {
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+}
+
+.stButton>button.primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.stButton>button.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.stAlert {
+    border-radius: 8px;
+}
+
+.stExpander {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.header {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.subheader {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.folium-map {
+    border-radius: 8px !important;
+    border: 1px solid var(--border) !important;
+    margin-bottom: 1rem !important;
+}
+
+.route-container {
+    background-color: var(--card-bg) !important;
+    color: var(--text) !important;
+    border-radius: 8px !important;
+    border: 1px solid var(--border) !important;
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+}
