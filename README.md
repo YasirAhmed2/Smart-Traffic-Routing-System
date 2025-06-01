@@ -8,15 +8,21 @@
 A sophisticated traffic management system that models city road networks as graphs and applies Dijkstra's algorithm for optimal route finding, with real-time traffic visualization and dynamic congestion modeling.
 
 ## 📊 System Architecture
+```mermaid
 graph TD
-    A[City Graph Model] --> B[NetworkX Graph]
-    B --> C[Intersections as Nodes]
-    B --> D[Roads as Weighted Edges]
-    E[Route Optimization] --> F[Dijkstra's Algorithm]
-    E --> G[Yen's K-Shortest Paths]
-    H[Visualization] --> I[Matplotlib/Streamlit]
-    H --> J[Folium Maps]
-    K[User Interface] --> L[Streamlit Web App]
+    A[City Data] --> B{Graph Model}
+    B --> C[NetworkX Graph]
+    C --> D[Nodes = Intersections]
+    C --> E[Edges = Roads]
+    F[Route Optimization] --> G[Dijkstra's Algorithm]
+    F --> H[Yen's K-Shortest Paths]
+    I[Visualization] --> J[Matplotlib]
+    I --> K[Folium Maps]
+    L[User Interface] --> M[Streamlit Web App]
+    B --> F
+    F --> I
+    I --> L
+```
     
 ## 🌟 Features
 
@@ -53,8 +59,8 @@ streamlit run app.py
 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
--- Fork the project
---Create your feature branch ( ```bash git checkout -b feature/AmazingFeature ```bash)
---Commit your changes ( ```bash git commit -m 'Add some amazing feature'  ```bash)
---Push to the branch ( ```bash git push origin feature/AmazingFeature  ```bash)
---Open a Pull Request
+- Fork the project
+- Create your feature branch ( ```bash git checkout -b feature/AmazingFeature ```bash)
+- Commit your changes ( ```bash git commit -m 'Add some amazing feature'  ```bash)
+- Push to the branch ( ```bash git push origin feature/AmazingFeature  ```bash)
+- Open a Pull Request
