@@ -40,7 +40,7 @@ graph TD
 ### Advanced Features
 - **Traffic Alert System**: Automatic congestion detection and alerts
 - **User Reporting**: Crowd-sourced traffic updates
-- **Export Functionality**: PDF route summaries with detailed information
+
 
 
 
