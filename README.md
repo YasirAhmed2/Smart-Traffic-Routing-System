@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.14.0-FF4B4B)
 ![NetworkX](https://img.shields.io/badge/NetworkX-2.8.6-8A2BE2)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 A sophisticated traffic management system that models city road networks as graphs and applies Dijkstra's algorithm for optimal route finding, with real-time traffic visualization and dynamic congestion modeling.
 
@@ -42,7 +42,7 @@ graph TD
 - **User Reporting**: Crowd-sourced traffic updates
 - **Export Functionality**: PDF route summaries with detailed information
 
-)
+
 
 
 ## 🛠️ Installation
