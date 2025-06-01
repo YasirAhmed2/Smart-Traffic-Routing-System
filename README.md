@@ -51,16 +51,23 @@ graph TD
    ```bash
    git clone https://github.com/YasirAhmed2/Smart-Traffic-Routing-System.git
 2. Install Dependencies
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
-3. Run application
+4. Run application
 streamlit run app.py
 
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
 - Fork the project
-- Create your feature branch ( ```bash git checkout -b feature/AmazingFeature ```bash)
-- Commit your changes ( ```bash git commit -m 'Add some amazing feature'  ```bash)
-- Push to the branch ( ```bash git push origin feature/AmazingFeature  ```bash)
+- Create your feature branch 
+  ```bash
+  git checkout -b feature/AmazingFeature 
+- Commit your changes
+  ```bash
+  git commit -m 'Add some amazing feature'  
+- Push to the branch
+  ```bash
+  git push origin feature/AmazingFeature  
 - Open a Pull Request
