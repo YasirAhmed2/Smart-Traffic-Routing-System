@@ -56,7 +56,7 @@ pip install -r requirements.txt
 3. Run application
 streamlit run app.py
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
 - Fork the project
