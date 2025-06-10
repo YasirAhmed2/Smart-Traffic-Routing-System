@@ -7,7 +7,7 @@
 
 A sophisticated traffic management system that models city road networks as graphs and applies Dijkstra's algorithm for optimal route finding, with real-time traffic visualization and dynamic congestion modeling.
 
-## 📊 System Architecture
+## System Architecture
 ```mermaid
 graph TD
     A[City Data] --> B{Graph Model}
