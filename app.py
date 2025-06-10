@@ -119,28 +119,26 @@ def render_sidebar():
     """Render the sidebar controls"""
     st.sidebar.markdown("<h1 class='header'>🚦 Route Controls</h1>", unsafe_allow_html=True)
     
-    tabs = st.sidebar.radio("", ["Route Planning", "Traffic Management"], label_visibility="collapsed")
     
-    if tabs == "Route Planning":
-        st.sidebar.markdown("<h2 class='subheader'>Route Settings</h2>", unsafe_allow_html=True)
+    st.sidebar.markdown("<h2 class='subheader'>Route Settings</h2>", unsafe_allow_html=True)
         
-        cols = st.sidebar.columns(2)
-        with cols[0]:
-            start_node = st.selectbox("📍 Start Location", SAMPLE_INTERSECTIONS, index=0)
-        with cols[1]:
-            end_node = st.selectbox("🏁 Destination", SAMPLE_INTERSECTIONS, index=5)
+    cols = st.sidebar.columns(2)
+    with cols[0]:
+        start_node = st.selectbox("📍 Start Location", SAMPLE_INTERSECTIONS, index=0)
+    with cols[1]:
+        end_node = st.selectbox("🏁 Destination", SAMPLE_INTERSECTIONS, index=5)
         
-        time_of_day = st.sidebar.selectbox(
+    time_of_day = st.sidebar.selectbox(
             "🕒 Time of Day",
             ["morning", "afternoon", "evening", "night"],
             index=1
         )
         
-        use_case = None
+    use_case = None
         
-        show_multiple_routes = st.sidebar.checkbox("Show alternative routes", True)
-        if show_multiple_routes:
-            num_routes = st.sidebar.slider("Number of routes to show", 1, 5, 3)
+    show_multiple_routes = st.sidebar.checkbox("Show alternative routes", True)
+    if show_multiple_routes:
+        num_routes = st.sidebar.slider("Number of routes to show", 1, 5, 3)
         
         st.sidebar.markdown("---")
         find_route = st.sidebar.button("🔍 FIND BEST ROUTE", use_container_width=True, type="primary")
